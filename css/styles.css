@@ -11,6 +11,48 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
  /* General Styles */
+ #con {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 20px;
+}
+.blog-summary {
+  width:700px; /* הגדר את רוחב התיבה לפי הצורך */
+  height: max-content; /* גבול גובה התיבה */
+  overflow: hidden; /* מסתיר תוכן שאינו נכנס לתיבה */
+  text-overflow: ellipsis; /* מוסיף נקודות בסוף התוכן אם הוא נקטע */
+  white-space: nowrap; /* מונע שבירת שורות ומקטין את הטקסט לשורה אחת */
+}
+
+#con p {
+    margin-bottom: 10px;
+}
+
+#con h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#con ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#con li {
+    margin-bottom: 5px;
+}
+
+#con a {
+    color: blue;
+    text-decoration: underline;
+}
+
+ #con{
+font-family: 'Fenix', serif; font-style: italic; color: #666; font-size: 25px; 
+ }
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -81,7 +123,6 @@ main {
 
 .post-content {
     font-size: 18px;
-    line-height: 1.8;
     margin-bottom: 30px;
 }
 
