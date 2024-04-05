@@ -10,12 +10,161 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.navbar-nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+    color: #ffc107;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+.post-header {
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.post-meta {
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.post-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Comments Section Styles */
+.comment-section {
+    margin-top: 40px;
+}
+
+.comment-form {
+    margin-bottom: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.comment-form button:hover {
+    background-color: #0056b3;
+}
+
+.comment-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment-date {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.comment-content {
+    font-size: 16px;
+}
+
  *{
   text-align: right
  }
  #bzlogContainer{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  gap: 100px;
+  text-align: center;
  }
  #Logo{
   height:150px;

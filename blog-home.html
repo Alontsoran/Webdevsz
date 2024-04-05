@@ -55,7 +55,7 @@
             </nav> <!-- Navigation-->
           
                 <!-- קוד HTML של תצוגת הבלוגים -->
-                <div id="bzlogContainer"></div>
+               
             
     <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -121,31 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
                                          <!-- קוד HTML של תצוגת הבלוגים -->
                 <div id="bzlogContainer"></div>
             
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        // קריאה לקובץ JSON מהנתיב המתאים לשרת המוגש לדף HTML
-                        fetch("C:\\Store Data Set\\blog_post.json")
-                            .then(response => response.json())
-                            .then(data => {
-                                // טעינת הנתונים לתוך משתנה ב-JavaScript
-                                var blogsData = data;
-                    
-                                // טעינת הבלוגים לתוך תצוגת הדף
-                                var blogContainer = document.querySelector('#bzlogContainer');
-                    
-                                // עבור כל בלוג במערך, יציג אותו בדף
-                                blogsData.forEach(blog => {
-                                    var blogElement = document.createElement('div');
-                                    blogElement.innerHTML = `
-                                        <div class="blog-title">${blog.title}</div>
-                                        <div class="blog-content">${blog.content}</div>
-                                    `;
-                                    blogContainer.appendChild(blogElement);
-                                });
-                            })
-                            .catch(error => console.error('Error fetching blogs:', error));
-                    });
-                </script>
                             <!-- News item-->
                             <div class="mb-4">
                                 <div class="small text-muted">May 12, 2023</div>
