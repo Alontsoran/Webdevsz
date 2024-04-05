@@ -57,31 +57,34 @@
                 <!-- קוד HTML של תצוגת הבלוגים -->
                 <div id="bzlogContainer"></div>
             
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        // קריאה לקובץ JSON מהנתיב המתאים לשרת המוגש לדף HTML
-                        fetch("C:\\Store Data Set\\blog_post.json")
-                            .then(response => response.json())
-                            .then(data => {
-                                // טעינת הנתונים לתוך משתנה ב-JavaScript
-                                var blogsData = data;
-                    
-                                // טעינת הבלוגים לתוך תצוגת הדף
-                                var blogContainer = document.querySelector('#bzlogContainer');
-                    
-                                // עבור כל בלוג במערך, יציג אותו בדף
-                                blogsData.forEach(blog => {
-                                    var blogElement = document.createElement('div');
-                                    blogElement.innerHTML = `
-                                        <div class="blog-title">${blog.title}</div>
-                                        <div class="blog-content">${blog.content}</div>
-                                    `;
-                                    blogContainer.appendChild(blogElement);
-                                });
-                            })
-                            .catch(error => console.error('Error fetching blogs:', error));
-                    });
-                </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // שינוי הנתיב לכתובת URL של השרת שלך כאן
+    fetch('blog.json')
+    .then(response => response.json())
+    .then(blogsData => {
+        // טעינת הבלוגים לתוך תצוגת הדף
+        var blogContainer = document.querySelector('#bzlogContainer');
+        blogContainer.innerHTML = ''; // נקה את המכיל אם יש בו תוכן קודם
+
+        // יצירת HTML לכל פוסט בלוג
+        blogsData.forEach(blog => {
+            var blogElement = document.createElement('div');
+            blogElement.classList.add('blog-post-summary');
+            // שימוש במספר שב-JSON כדי ליצור קישור לבלוג המתאים
+            var blogLink = `newblog/blog_${blog.blog_number}.html`;
+            blogElement.innerHTML = `
+                <h2 class="blog-title">${blog.title}</h2>
+                <p class="blog-summary">${blog.summary}</p>
+                <a href="${blogLink}" class="read-more">קרא עוד</a>
+            `;
+            blogContainer.appendChild(blogElement);
+        });
+    })
+    .catch(error => console.error('Error loading blog data:', error));
+});
+</script>
+
           
            
             
