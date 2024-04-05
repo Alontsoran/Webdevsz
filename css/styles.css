@@ -13,6 +13,10 @@
  *{
   text-align: right
  }
+ #bzlogContainer{
+  display: flex;
+  flex-wrap: wrap;
+ }
  #Logo{
   height:150px;
   width: 150px;
