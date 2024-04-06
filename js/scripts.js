@@ -8,7 +8,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   // שינוי הנתיב לכתובת URL של השרת שלך כאן
-  fetch("https://alontsoran.github.io/Webdevsz/js/blog.json")
+  fetch("./js/blog.json")
     .then((response) => response.json())
     .then((blogsData) => {
       // טעינת הבלוגים לתוך תצוגת הדף
