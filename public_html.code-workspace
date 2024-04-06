@@ -1,24 +1,24 @@
 {
   "folders": [
-	{
-		"path": "../../../Users/alont/AppData/Roaming/Code/User/globalStorage/humy2833.ftp-simple/remote-workspace-temp/ca1dc6f665ccd3a103bcda285eee5af6/public_html"
-	},
-	{
-		"path": "../AI-Alon"
-	},
-	{
-		"path": "."
-	},
-	{
-		"path": "../scripts"
-	},
-	{
-		"path": "../src"
-	},
-	{
-		"path": "../Ai"
-	}
-],
+    {
+      "path": "../../../Users/alont/AppData/Roaming/Code/User/globalStorage/humy2833.ftp-simple/remote-workspace-temp/ca1dc6f665ccd3a103bcda285eee5af6/public_html"
+    },
+    {
+      "path": "../AI-Alon"
+    },
+    {
+      "path": "."
+    },
+    {
+      "path": "../scripts"
+    },
+    {
+      "path": "../src"
+    },
+    {
+      "path": "../Ai"
+    }
+  ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "dist",
     "liveServer.settings.port": 5501
