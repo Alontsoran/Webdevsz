@@ -11,12 +11,25 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
  /* General Styles */
+ .card-body.p-4{
+  position: relative;
+  height: 660px;
+   width:250px; /* הגדר את רוחב התיבה לפי הצורך */
+  height: max-content; /* גבול גובה התיבה */
+  overflow: hidden; /* מסתיר תוכן שאינו נכנס לתיבה */
+  text-overflow:clip; /* מוסיף נקודות בסוף התוכן אם הוא נקטע */
+  white-space: nowrap; /* מונע שבירת שורות ומקטין את הטקסט לשורה אחת */
+}
  #con {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     margin: 20px;
 }
+.blog-post-summary{
+width: 450px;
+}
+
 .blog-summary {
   width:700px; /* הגדר את רוחב התיבה לפי הצורך */
   height: max-content; /* גבול גובה התיבה */
@@ -163,7 +176,9 @@ main {
 .comment-form button:hover {
     background-color: #0056b3;
 }
-
+#blogsz{
+  width: 250px;
+}
 .comment-list {
     list-style-type: none;
     margin: 0;
@@ -202,9 +217,7 @@ main {
  }
  #bzlogContainer{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 100px;
+  
   text-align: center;
  }
  #Logo{
